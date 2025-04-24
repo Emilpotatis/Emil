@@ -1,0 +1,119 @@
+
+body {
+  background: url(sak.jpg);
+  color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  backdrop-filter: blur(2px);
+  font-family: 'Segoe Script', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-grid img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-color: white;
+}
+
+.image-grid p {
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe Script', Cochin, Georgia, serif;
+  font-size: 16px;
+  margin-top: 8px;
+  max-width: 100%;
+  position: static;
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    max-width: 180px;
+  }
+  
+  .image-grid p {
+    font-size: 14px;
+  }
+}
+
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(112, 104, 128);
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  font-family: 'Segoe Script', Cochin, Georgia, serif;
+  text-decoration: dashed;
+  display: block;
+  padding: 15px 30px;
+  background-color: aliceblue;
+  font-size: large;
+  border: 3px solid navy;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.53);
+  transform: scale(0.98);
+  color: black;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h1{
+  color: rgb(0, 0, 0);
+  font-family: cursive, Segoe Script, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30%;
+  text-align: center;
+  margin: 2% 0 3% 0;   
+}
+
+p{
+  color: rgb(0, 0, 0);
+
+}
